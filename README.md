@@ -21,11 +21,16 @@ Docs for ADO.NET: https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/
 Reviewed by VocalNight: https://github.com/TheCSharpAcademy/CodeReviews.Console.HabitTracker/pull/307
 
 >1- Find a way to clean the console after most operations, it can get quite messy if you don't.
->
+
+Fixed.
+
 >2- Find a way to hide/format the date time when time is not needed, instead of leaving it as 00:00:00:
->
+
+More difficult than expected. because I made use of a Dictionary of `<string, object>`, I cannot access methods of a DateOnly object.   
+Next time I will make use of a class to store the data instead.
 >3- you left a Console.print somewhere in the code. This a minor thing, but make sure to take out all debug prints when you are doing a final code review
 
+Fixed
 
 ## Given requirements
 
