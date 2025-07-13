@@ -17,18 +17,23 @@ internal class UserInterface(string connectionString, string userName)
             switch (choice)
             {
                 case MenuOption.InsertHabit:
+                    Console.Clear();
                     _habitController.InsertHabit();
                     break;
                 case MenuOption.SeeHabits:
+                    Console.Clear();
                     _habitController.SeeHabits();
                     break;
                 case MenuOption.UpdateHabit:
+                    Console.Clear();
                     _habitController.UpdateHabit();
                     break;
                 case MenuOption.RemoveHabit:
+                    Console.Clear();
                     _habitController.RemoveHabit();
                     break;
                 case MenuOption.ExitApplication:
+                    Console.Clear();
                     AnsiConsole.MarkupLine("[green]Goodbye![/]");
                     return;
             }
