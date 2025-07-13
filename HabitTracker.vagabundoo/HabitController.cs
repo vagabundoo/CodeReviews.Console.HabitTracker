@@ -46,7 +46,6 @@ public class HabitController(string connectionString, string userName)
     public void UpdateHabit()
     {
         var habits = _queries.RetrieveHabits(userName).ToList();
-        Console.WriteLine(habits);
         var habitChoice = new SelectionPrompt<string>();
         habitChoice.Title = "What habit do you want to change?";
         foreach (var habit in habits)
@@ -67,7 +66,6 @@ public class HabitController(string connectionString, string userName)
     public void RemoveHabit()
     {
         var habits = _queries.RetrieveHabits(userName).ToList();
-        Console.WriteLine(habits);
         var habitChoice = new SelectionPrompt<string>();
         habitChoice.Title = "What habit do you want to change?";
         foreach (var habit in habits)
