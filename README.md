@@ -26,8 +26,10 @@ Fixed.
 
 >2- Find a way to hide/format the date time when time is not needed, instead of leaving it as 00:00:00:
 
-More difficult than expected. because I made use of a Dictionary of `<string, object>`, I cannot access methods of a DateOnly object.   
-Next time I will make use of a class to store the data instead.
+More difficult than expected. Because I made use of a Dictionary of `<string, object>`, I cannot access methods of a DateOnly object.   
+Next time I will make use of a class to store the data instead. 
+Discussion on this topic for reference: https://www.reddit.com/r/csharp/comments/vmbkkk/one_dictionary_for_different_value_types/
+
 >3- you left a Console.print somewhere in the code. This a minor thing, but make sure to take out all debug prints when you are doing a final code review
 
 Fixed
